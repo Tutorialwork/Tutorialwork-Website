@@ -7,4 +7,127 @@
 
 body, html {
   background: var(--grey);
+  color: #fff;
+  font-family: 'LEMONMILK-Medium';
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  user-select: none;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+  overflow: hidden;
+  opacity: 0.025;
+  font-size: 400px;
+  line-height: 0.85;
+}
+
+.container-left {
+  height: auto;
+}
+
+.background-left {
+  left: 0;
+  font-size: 200px;
+  width: auto;
+}
+
+.heading {
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 100px;
+}
+
+.green {
+  color: var(--green);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 0 1%;
+  display: inline-block;
+}
+
+li a {
+  transition: all .2s;
+}
+
+li a:hover {
+  color: var(--green);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sidebar {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar img {
+  width: 25%;
+  margin: 5% 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  width: 100%;
+  padding: 25px 0;
+}
+
+.logo {
+  position: absolute;
+  width: 75px;
+  border-radius: 200px;
+  margin: 2%;
+}
+
+.flex {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+}
+
+h1{
+  font-size: 45px;
+  text-align: center;
+}
+
+.about-text {
+  height: 25vh;
+}
+
+.about-text img {
+  margin: 0 5%;
+}
+
+.about-text p {
+  max-width: 50vw;
+  font-size: 1.25vw;
 }
