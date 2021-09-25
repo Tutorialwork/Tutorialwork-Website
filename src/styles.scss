@@ -146,6 +146,10 @@ h1{
   margin: auto 0;
 }
 
+.reset-text-align h1, p {
+  text-align: start;
+}
+
 @media (max-width: 1000px) {
   .flex {
     flex-direction: column;
