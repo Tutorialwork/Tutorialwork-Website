@@ -3,6 +3,6 @@
   <h5 class="margin-auto">{{skillName}}</h5>
 </div>
 <div class="progress">
-  <div id="{{skillName}}-progress"></div>
+  <div id="{{skillName}}-progress" [@progressCountUp]="{value: animationState, params: {progress: skillProgress}}"></div>
   <span>{{skillProgress}} %</span>
 </div>
