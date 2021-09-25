@@ -5,8 +5,18 @@ footer {
 
 .footer-container {
   justify-content: space-between;
+  flex-direction: row;
 }
 
 .link-container p {
   margin: auto 10px;
+}
+
+@media (max-width: 1000px) {
+  .link-container p {
+    text-align: center;
+  }
+  p {
+    font-size: 12px;
+  }
 }
