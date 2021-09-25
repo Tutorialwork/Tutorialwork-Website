@@ -18,7 +18,7 @@ body, html {
   text-align: center;
   height: 100vh;
   width: 100vw;
-  user-select: none;
+  margin-bottom: 10%;
 }
 
 .background {
@@ -29,8 +29,9 @@ body, html {
   z-index: 0;
   overflow: hidden;
   opacity: 0.025;
-  font-size: 400px;
+  font-size: 24vw;
   line-height: 0.85;
+  user-select: none;
 }
 
 .container-left {
@@ -39,7 +40,7 @@ body, html {
 
 .background-left {
   left: 0;
-  font-size: 200px;
+  font-size: 12vw;
   width: auto;
 }
 
@@ -47,7 +48,7 @@ body, html {
   position: relative;
   top: 40%;
   transform: translateY(-50%);
-  font-size: 100px;
+  font-size: 7vw;
 }
 
 .green {
@@ -110,8 +111,17 @@ header nav {
 .flex {
   display: flex;
 }
+
+.flex-column {
+  flex-direction: column;
+}
+
 .flex-center {
   justify-content: center;
+}
+
+.flex-item-center {
+  align-items: center;
 }
 
 h1{
@@ -120,14 +130,27 @@ h1{
 }
 
 .about-text {
-  height: 25vh;
+  min-height: 25vh;
 }
 
 .about-text img {
-  margin: 0 5%;
+  margin: 2%;
 }
 
 .about-text p {
   max-width: 50vw;
-  font-size: 1.25vw;
+  font-size: 23px;
+}
+
+.margin-auto {
+  margin: auto 0;
+}
+
+@media (max-width: 1000px) {
+  .flex {
+    flex-direction: column;
+  }
+  .about-text img {
+    width: 25%;
+  }
 }
