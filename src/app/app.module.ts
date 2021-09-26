@@ -26,7 +26,7 @@ import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform
     FooterComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule
   ],
