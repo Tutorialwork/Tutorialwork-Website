@@ -12,6 +12,10 @@ footer {
   margin: auto 10px;
 }
 
+.link {
+  cursor: pointer;
+}
+
 @media (max-width: 1000px) {
   .link-container p {
     text-align: center;
