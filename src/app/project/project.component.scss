@@ -2,7 +2,7 @@
   z-index: 99;
 }
 .social-logo {
-  width: 50px;
+  width: 30px;
   margin: 0 25px;
 }
 .social-container {
@@ -14,10 +14,21 @@
   border-radius: 20px;
 }
 
+.button:hover {
+  opacity: .5;
+}
+
 .project-logo {
   border-radius: 20px;
+  width: 200px;
+  height: 200px;
 }
 
 .project-container {
   margin: 15px 0;
 }
+
+.social-logo {
+  transition: all .2s ease-in-out;
+}
+

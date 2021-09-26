@@ -41,7 +41,7 @@ body, html {
 
 .background-left {
   left: 0;
-  font-size: 12vw;
+  font-size: 16vw;
   width: auto;
 }
 
@@ -79,7 +79,7 @@ a {
 }
 
 .sidebar {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 40%;
   display: flex;
@@ -179,5 +179,11 @@ h1{
   }
   ul {
     padding: 0;
+  }
+  .project-container {
+    align-items: center;
+  }
+  .sidebar {
+    position: absolute;
   }
 }

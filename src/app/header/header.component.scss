@@ -6,3 +6,11 @@
   font-family: 'Quicksand-Regular';
   src: url('../../assets/fonts/Quicksand-Regular.otf') format('truetype');
 }
+
+.sidebar a {
+  transition: all .2s ease-in-out;
+}
+
+.sidebar a:hover {
+  filter: opacity(.5) drop-shadow(0 0 0 green);
+}
