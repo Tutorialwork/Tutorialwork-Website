@@ -12,4 +12,4 @@ RUN npm run build:ssr
 
 CMD [ "npm", "run", "serve:ssr" ]
 
-EXPOSE 3100
+EXPOSE 4000
