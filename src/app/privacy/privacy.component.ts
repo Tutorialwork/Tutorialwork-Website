@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MetaService } from '../services/meta.service';
 
 @Component({
   selector: 'app-privacy',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrivacyComponent implements OnInit {
 
-  constructor() { }
+  constructor(private meta: MetaService) { }
 
   ngOnInit(): void {
+    this.meta.setBasicMetaTags({
+      title: 'Privacy » Manuel Schuler',
+      description: 'Privacy » Flutter, Angular Developer & YouTuber',
+      keywords: ['flutter', 'angular', 'java', 'developer', 'softwareentwickler']
+    });
   }
 
 }
