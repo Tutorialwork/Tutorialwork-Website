@@ -15,7 +15,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { PrivacyComponent } from './privacy/privacy.component';
-import { YoutubeVideosComponent } from './youtube-videos/youtube-videos.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FlexModule} from '@angular/flex-layout';
 
@@ -33,7 +32,6 @@ import {FlexModule} from '@angular/flex-layout';
     HomePageComponent,
     ImprintComponent,
     PrivacyComponent,
-    YoutubeVideosComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),

@@ -1,15 +1,4 @@
-FROM node:16-alpine
+FROM nginx:1.21.6-alpine
 
-WORKDIR /usr/src/app
-
-COPY package.json .
-
-RUN npm install
-
-ADD . /usr/src/app
-
-RUN npm run build:ssr
-
-CMD [ "npm", "run", "serve:ssr" ]
-
-EXPOSE 4000
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY /dist/tutorialwork-website /usr/share/nginx/html
