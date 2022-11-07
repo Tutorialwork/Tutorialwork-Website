@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MetaService } from './meta.service';
+import { YoutubeVideosService } from './youtube-videos.service';
 
-describe('MetaService', () => {
-  let service: MetaService;
+describe('YoutubeVideosService', () => {
+  let service: YoutubeVideosService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(MetaService);
+    service = TestBed.inject(YoutubeVideosService);
   });
 
   it('should be created', () => {

@@ -1,0 +1,31 @@
+:host {
+  z-index: 99;
+}
+.video-container {
+  z-index: 100;
+  cursor: pointer;
+}
+.video-container img {
+  width: 400px;
+}
+.video-container p {
+  width: 400px;
+}
+.button {
+  background: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  color: #1E1E1E;
+}
+.button:hover {
+  opacity: .5;
+}
+
+@media (max-width: 1000px) {
+  .video-container img {
+    width: 80%
+  }
+  .video-container p {
+    width: 80%;
+  }
+}
